@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;}
+
+/* ---navbar styles------- */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;}
+.end{
+    display: flex;   }
+.navbar h2{
+    font-family: Titillium Web;
+    font-weight:750;
+    letter-spacing: 5px;}
+.navlinks a{
+    color: black;
+    font-family: poppins;
+    margin: 0 15px;
+    font-weight: 500;}
+.icon{
+    margin: 0 15px;
+    height: 20px;
+    width: 20px;
+}
+.text{
+    font-family: poppins;
+    margin:0 10px 0 50px;
+}
+.no{
+    padding:4px 8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.navlinks a{
+    position: relative;
+}
+.navlinks a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.505);
+    position: absolute;
+    top: 23px;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navlinks a:hover::after{
+    width: 100%;
+}
+
+/* -- intro styles-------- */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+}
+.desc{
+    width: 20%;
+    font-family: poppins;
+    padding-right:50px;
+}
+.desc p{
+    margin-bottom: 30px;
+}
+.rm{
+    font-weight: 600;
+    padding-right: 60px;
+    color: black;
+}
+
+.main_con{
+    width: 60%;
+    text-align: center;
+    font-family: roboto slab;
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 3px;
+}
+.in_head{
+    padding: 0 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 0 -20px;
+}
+
+.jacket{
+    width: 15%;
+    border: 2px solid;
+    height: 250px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+.jacket div{
+    text-align: center;}
+.jacket img{
+    width: 150px;
+}
+.jacket p{
+    text-align: center;
+    font-family: poppins;}
+.intro{
+    /* background-color: yellow; */
+    height: 400px;
+}
+
+/* --session styles------ */
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 80px;
+    font-family: poppins;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.fh3{
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+}
+.sh3{
+    padding: 3px 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px 20px 80px;
+}
+.img{
+    height: 230px;
+}
+.offer{
+    border: 3px solid black;
+    padding: 80px 100px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;}
+.head h1{
+    font-family:roboto slab;
+    letter-spacing: 5px;
+    font-size: 35px;}
+.head ion-icon{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 5px 20px;
+    margin:0 20px;}
+.head ion-icon:hover{
+    background-color: red;
+    color: white;
+}
+.products{
+    display: flex;
+    margin:0 80px;
+}
+.prod{
+    border: 2px solid rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    width: 25%;
+    margin-right:20px;
+}
+.image{
+    background-color: rgba(0, 0, 255, 0.229);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.image ion-icon{
+    position: absolute;
+    top: 5px;
+    left: 90%;
+    height: 20px;
+    width: 20px;
+}
+
+.prod_img{
+    height: 180px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.prod_img:hover{
+    transform: scale(1.1,1.1);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.details p{
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 500;
+}
+.info ion-icon{
+    height: 25px;
+    width: 25px;
+}
+.btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn button{
+    padding: 8px 30px;
+    font-size: 18px;
+    font-family: poppins;
+    background-color: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.419);
+    border-radius: 10px;
+    font-weight: 500;
+}
+.btn button:hover{
+    background-color: rgba(255, 0, 0, 0.577);
+    color: white;
+}
+.products{
+    margin-top: 50px;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+.content{
+    width: 50%;
+}
+.content h1{
+    font-family: roboto slab;
+    font-size: 60px;
+    word-spacing: 10px ;
+    letter-spacing: 10px;
+}
+.content h1 span{
+    font-size: 20px;
+    letter-spacing: 3px;
+}   
+.content p{
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+
+.one a, .two a{
+    border: 2px solid black;
+    padding: 4px 9px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: poppins;
+    margin-right: 10px;
+}
+.one,.two{
+    display: flex;
+    align-items: center;
+}
+.instructions{
+    display: flex;
+    justify-content: space-between;
+}
+.inst_cnt{
+    font-weight: 600;
+}
+.inst_cnt span{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.model{
+    width: 40%;
+}
+
+.socials{
+    text-align: center;
+}
+.socials h1{
+    font-family: poppins;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-shadow: 3px 3px 10px;
+}
+.icons a ion-icon{
+    height: 30px;
+    width: 30px;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+.footer{
+    background-color: aqua;
+    display: flex;
+    margin: 50px 0px;
+    padding-bottom: 50px;}
+.box{
+    width: 20%;
+    text-align: center;}
+.box_e{
+    width: 40%;
+    text-align: center;}
+.box1 h2{
+    font-family: Titillium Web;
+    font-weight:750;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;}
+.box1 p{
+    width: 70%;
+    font-family: poppins;
+    font-size: 14px;}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    font-family: poppins;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.links{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links a{
+    font-family: poppins;
+    font-size: 14px;
+    color: black;
+}
